@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Новости веселей",
+	"version": "0.1",
+	"icons": { "16": "icon32.png",
+           "48": "icon128.png",
+          "128": "icon128.png" },
+	"description": "Заменяет скучные новости на нескучные.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
